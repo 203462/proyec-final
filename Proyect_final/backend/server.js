@@ -21,9 +21,11 @@ app.use(express.json())
 app.use(cors())
 
 // routes -------------------------------------------
+app.use(routes);
 app.get('/', (req, res)=>{
     res.send('Welcome to my API')
 })
+
 
 // server running -----------------------------------
 app.listen(app.get('port'), ()=>{

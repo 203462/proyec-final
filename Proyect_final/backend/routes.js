@@ -3,7 +3,7 @@ const routes = express.Router()
 const bcrypt = require('bcrypt')
 const saltRounds = 10
 
-routes.get("/api/registros", (req, res)=>{
+routes.get("/registros", (req, res)=>{
     req.getConnection((err, conn)=>{
         const sqlGet = "SELECT * FROM plant_data";
         conn.query(sqlGet, (error, result)=>{
@@ -12,7 +12,7 @@ routes.get("/api/registros", (req, res)=>{
     })
 })
 
-routes.post('/api/login', (req, res) => {
+routes.post('/login', (req, res) => {
     const email = req.body.email;
     const pass = req.body.pass;
     req.getConnection((err, conn) => {

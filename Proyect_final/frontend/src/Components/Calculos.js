@@ -46,7 +46,7 @@ export default function Estadistica() {
 
     }
     useEffect(() => {
-        fetch('http://localhost:3001/api/registros')
+        fetch('http://localhost:3001/registros')
       .then((r) => r.json())
       .then((res) => {
             console.log(res)
