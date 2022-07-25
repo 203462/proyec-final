@@ -12,7 +12,7 @@ export default function Login() {
      const [pass, setPass] = useState();
 
      const login = () => {
-          axios.post("http://localhost:3001/api/login", {
+          axios.post("http://localhost:3001/api/user", { 
                email: email,
                pass: pass,
           }).then((response) => {

@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom'
 
 export default function Main() {
         return (
@@ -6,9 +6,9 @@ export default function Main() {
                         <div className="col-md-5 p-lg-5 mx-auto my-5">
                                 <h1 className="display-4 fw-normal">NeoSoft</h1>
                                 <p className="lead fw-normal">Proyecto Integrador</p>
-                                <a className="btn btn-outline-secondary" href="Login">Iniciar sesión</a>
+                                <Link className="btn btn-outline-secondary" to='login'>Iniciar sesión</Link>
                                 <br /><br />
-                                <a className="btn btn-outline-secondary col" href="Register">Registrarse</a>
+                                <Link className="btn btn-outline-secondary col" to='Register'>Registrarse</Link>
                         </div>
                         <div className="product-device shadow-sm d-none d-md-block"></div>
                         <div className="product-device product-device-2 shadow-sm d-none d-md-block"></div>

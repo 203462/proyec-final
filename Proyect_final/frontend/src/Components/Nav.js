@@ -1,27 +1,27 @@
+import { Link } from "react-router-dom";
+
 const Nav =()=>{
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">NeoSoft</a>
+          <Link className="navbar-brand" to="/Home">NeoSoft</Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="Home">Home</a>
+                
+                <Link className="nav-link active" aria-current="page" to="/Home">Home</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="Regis_All">Todos los registros</a>
+                <Link className="nav-link" to="/Regis_All">Registros de datos</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="Last_Regis">Último registro</a>
+                <Link className="nav-link" to='/Calculos'>Datos estadísticos</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href='Calculos'>Datos estadísticos</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href='Login'>Salir</a>
+                <Link className="nav-link" to='/Login'>Salir</Link>
               </li>
             </ul>
           </div>
