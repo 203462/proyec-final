@@ -13,16 +13,13 @@ export default function Regis_All() {
       })
   }, [])
 
-
   return (
     <div>
       <Nav />
       <div className='container'>
-
         <div style={{ marginTop: "150px" }}>
           <TablaDatos data={data} />
         </div>
-
       </div>
     </div>
   )

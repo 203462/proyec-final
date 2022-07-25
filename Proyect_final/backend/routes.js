@@ -1,6 +1,6 @@
 const express = require('express')
 const routes = express.Router()
-const bcrypt = require('bcrypt')
+const bcryptjs = require('bcryptjs')
 const saltRounds = 10
 
 routes.get("/registros", (req, res)=>{
@@ -23,11 +23,13 @@ routes.post('/login', (req, res) => {
                 if (result) {
                     res.send(result)
                 } else {
-                    res.send({ message: 'Usuario o contrasenia incorrectos' })
+                    res.send({ message: 'Usuario o contraseña incorrectos' })
                 }
             }
         })
     })
 })
+
+
 
 module.exports = routes

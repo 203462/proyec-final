@@ -21,9 +21,6 @@ export default function Home() {
                          <div className="product-device shadow-sm d-none d-md-block"></div>
                          <div className="product-device product-device-2 shadow-sm d-none d-md-block"></div>
                     </div>
-
-
-
                </div>
           </div>
      )

@@ -6,8 +6,6 @@ import Main from './Main'
 import Calculos from './Calculos'
 import Regis_all from './Regis_All'
 
-
-
 export default function Router() {
      return (
           <Routes>
@@ -15,9 +13,7 @@ export default function Router() {
                <Route path='/home' element={<Home/>}></Route>
                <Route path='/login' element={<Login/>}></Route>
                <Route path='/Calculos' element={<Calculos/>}></Route>
-               
                <Route path='/regis_all' element={<Regis_all/>}></Route>
-               
           </Routes>
      )
 

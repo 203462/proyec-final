@@ -37,9 +37,6 @@ export const TablaDatos = ({ data }) => {
                 
           </tbody>
         </table>
-
-
-
             <h1 className="text-center">Tabla de todos los datos registrados</h1>
             <table className="table table-dark table-striped">
                 <thead>
@@ -65,7 +62,6 @@ export const TablaDatos = ({ data }) => {
                                 <td>
                                 </td>
                             </tr>
-
                         )
                     })}
                 </tbody>
