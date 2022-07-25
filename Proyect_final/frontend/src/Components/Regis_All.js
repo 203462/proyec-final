@@ -7,7 +7,7 @@ import { TablaDatos } from './TablaDatos'
 export default function Regis_All() {
   const [data, setData] = useState([])
   useEffect(() => {
-    fetch('http://localhost:3001/api/datos')
+    fetch('http://localhost:3001/api/registros')
       .then((r) => r.json())
       .then((data) => {
         setData(data)

@@ -46,13 +46,13 @@ export default function Estadistica() {
 
     }
     useEffect(() => {
-        fetch('http://localhost:3001/api/datos')
+        fetch('http://localhost:3001/api/registros')
       .then((r) => r.json())
       .then((res) => {
             console.log(res)
             const datosFiltrados = res.map((dato) => {
 
-                return dato.suelo
+                return dato.hum_floor
             })
             console.log(datosFiltrados.length)
             const arrDatos = datosFiltrados.slice(datosFiltrados.length-150,datosFiltrados.length)
